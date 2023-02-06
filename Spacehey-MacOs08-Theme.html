@@ -1,0 +1,249 @@
+<!-- Licenced (c) under MIT License -->
+<!-- Layout created by vassdeniss (https://github.com/vassdeniss/Spacehey-MacOs8-Theme) -->
+<style>
+  body {
+    background-image: url(https://i.imgur.com/lSkd1qi.png);
+    background-repeat: repeat;
+  }
+
+  body a,
+  body a:link,
+  body a:visited {
+    color: #0000af;
+  }
+
+  body a:hover,
+  body a:active {
+    color: red;
+  }
+
+  .more,
+  nav .top a {
+    color: white !important;
+  }
+
+  div.friends:not(#comments) .heading {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  .friends .heading::before {
+    content: "";
+  }
+
+  .blog-preview h4 a,
+  .friends .heading a.more {
+    color: black !important;
+  }
+
+  main {
+    background: none;
+  }
+
+  .col.w-40,
+  .table-section,
+  .profile .contact {
+    background-image: url(https://i.imgur.com/G3oyGjH.png);
+    background-repeat: no-repeat;
+    background-size: 100% 18px;
+  }
+
+  .profile .blurbs,
+  .profile .friends,
+  .blog-preview {
+    background-image: url(https://i.imgur.com/kqDuesP.png);
+    background-repeat: no-repeat;
+    background-size: 100% 18px;
+  }
+
+  footer {
+    background-image: url(https://i.imgur.com/a2XRnb7.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 200px;
+  }
+
+  footer p {
+    margin-top: 30px;
+  }
+
+  .col.w-40 h1,
+  .blog-preview h4,
+  .profile .blurbs .heading,
+  .profile .friends .heading,
+  .table-section .heading,
+  .profile .contact .heading {
+    margin: 0;
+    padding: 0 !important;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eeeeeec0 !important;
+    color: black !important;
+    font-size: 13px;
+  }
+
+  .profile .friends .heading {
+    background-color: transparent !important;
+  }
+
+  .profile .friends .heading h4,
+  .profile .friends .heading a.more {
+    background-color: #eeeeeec0 !important;
+    color: black !important;
+  }
+
+  .profile .contact,
+  .profile .url-info,
+  .profile .table-section,
+  .home-actions,
+  .col.w-40,
+  .blog-preview,
+  .profile-info,
+  .blurbs,
+  .friends,
+  footer {
+    border: 4px groove darkgray;
+    background-color: white;
+    padding: 1px;
+    color: black;
+  }
+
+  .profile .contact .heading,
+  .profile .table-section .heading,
+  .home-actions .heading,
+  .profile .blurbs .heading,
+  .profile .friends .heading,
+  .blog-preview h4 {
+    padding: 0 0 0 19px;
+  }
+
+  .profile .contact .heading h4,
+  .profile .table-section .heading h4,
+  .profile .blurbs .heading h4,
+  .profile .friends .heading h4,
+  .blog-entry .comments .heading h4,
+  .bulletin .comments .heading h4,
+  .home-actions .heading h1,
+  .statistics .heading h4,
+  .profile .blurbs .heading,
+  .profile .friends .heading,
+  .blog-preview h4 {
+    vertical-align: middle;
+  }
+
+  .friends {
+    margin: 20px 0;
+  }
+
+  .contact .inner {
+    margin-right: 14px;
+  }
+
+  .contact .inner img {
+    display: none;
+  }
+
+  .contact .inner a {
+    display: block;
+    text-align: center;
+    padding: 5px 0 5px 0;
+  }
+
+  .contact .inner a:link,
+  .contact .inner a:visited {
+    color: black;
+    font-weight: normal;
+  }
+
+  .contact .inner a:hover {
+    color: black;
+    font-weight: bold;
+  }
+
+  /* Contact Icons */
+  .contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a::before {
+    display: block;
+    content: url(https://i.imgur.com/Lq6tWHm.png);
+  }
+
+  .contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a::before {
+    display: block;
+    content: url(https://i.imgur.com/4ZrqUYj.png);
+  }
+
+  .contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a::before {
+    display: block;
+    content: url(https://i.imgur.com/Z4m2IaZ.png);
+  }
+
+  .contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a::before {
+    display: block;
+    content: url(https://i.imgur.com/TwldoVk.png);
+  }
+
+  .contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a::before {
+    display: block;
+    content: url(https://i.imgur.com/EwpZ06f.png);
+  }
+
+  .contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a::before {
+    display: block;
+    content: url(https://i.imgur.com/UUZGVCj.png);
+  }
+
+  .contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a::before {
+    display: block;
+    content: url(https://i.imgur.com/o3pPnWa.png);
+  }
+
+  .contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a::before {
+    display: block;
+    content: url(https://i.imgur.com/GPIyEfh.png);
+  }
+
+  /* Interests table */
+  .details-table td,
+  .details-table td:first-child {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+  }
+
+  /* Search button in navbar */
+  button {
+    border-style: solid;
+    border-image: url(https://i.imgur.com/BrmsgC9.png) 3 / 3px;
+    background-color: #c0c0c0;
+    font-weight: bold;
+    color: black;
+  }
+
+  /* Navbar */
+  nav .top {
+    background-image: url(https://i.imgur.com/BWehBy9.png) !important;
+    background-repeat: no-repeat !important;
+    background: #333366;
+    height: 100px !important;
+  }
+
+  nav .left,
+  nav .center,
+  nav .right {
+    margin-top: 20px;
+  }
+
+  .links {
+    background: white !important;
+    height: 24px;
+  }
+
+  nav .links .special a {
+    color: #040c5c !important;
+  }
+
+  nav {
+    border: 2px solid black;
+  }
+</style>
